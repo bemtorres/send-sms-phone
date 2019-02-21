@@ -17,10 +17,6 @@
       <link rel="icon" type="image/x-icon" class="js-site-favicon" href="img/bemtorres.ico">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
-    <!-- Emoji Picker -->
-    <link href="vendors/emoji-picker/css/emoji.css" rel="stylesheet">
-    <!-- Snackbar -->
-    <link href="css/snackbar.css" rel="stylesheet">
   </head>
   <body class="app flex-row align-items-center">
     <div class="container">
@@ -37,7 +33,7 @@
                       <i class="icon-globe"></i>
                     </span>
                   </div>
-                  <input class="form-control"   id="server" type="text" placeholder="IP server">
+                  <input class="form-control" id="server" type="text" placeholder="IP server">
                 </div>
                  <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -47,13 +43,13 @@
                   </div>
                   <input class="form-control"  id="port" type="text" placeholder="Port">
                 </div>
-                 <!-- <div class="input-group mb-3">
+                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
                       <i class="icon-user"></i>
                     </span>
                   </div>
-                  <input class="form-control" type="text" placeholder="Username">
+                  <input class="form-control"  id="username" type="text" placeholder="Username">
                 </div>
                  <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -61,15 +57,15 @@
                       <i class="icon-lock"></i>
                     </span>
                   </div>
-                  <input class="form-control" type="password" placeholder="Password">
-                </div> -->
+                  <input class="form-control"  id="password" type="password" placeholder="Password">
+                </div>
                  <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
                       <i class="icon-phone"></i>
                     </span>
                   </div>
-                  <input class="form-control"  id="phone" type="number" placeholder="Phone">
+                  <input class="form-control"  type="number" placeholder="Phone">
                 </div>
                  <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -77,54 +73,23 @@
                       <i class="icon-comment"></i>
                     </span>
                   </div>
-                  <textarea class="form-control"  id="message" type="text" placeholder="Message" data-emojiable="true" rows="6"> </textarea> 
+                  <textarea class="form-control" type="text" placeholder="Message"> </textarea> 
                 </div>
                 <div class="row">
                   <div class="col-3">
-                    <button class="btn btn-success px-4" onclick="send()" type="button">Send</button>
+                    <button class="btn btn-success px-4" type="button">Enviar</button>
                   </div>
-                  <div class="col-9">
-                   <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                      Read me!
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Instrucciones</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <p>
-                              Requisitos<br>
-                               1.- Correr de forma local.<br>
-                               2.- El pc y el celular deben estan en la misma red.<br>
-                               3.- Instalar en el celular <a href="https://play.google.com/store/apps/details?id=com.perfness.smsgateway.rest&hl=es_CL" target="_blink">REST SMS Gateway</a><br>
-                            
-                            </p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="col-9 text-right">
+                    <a class="btn btn-link px-0" href="bemtorres.win">¿Hola?</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="snackbar">Message Ok..</div>
             <div class="card text-white m-bgBlue py-5 d-md-down-none" style="width:44%">
               <div class="card-body text-center">
                 <div>
                   <img src="img/bemtorres.png" alt="Logo Citt" width="100%" height="300px" class="logoe">
                 </div>
-                <p class="text-muted"><a href="bemtorres.win">By Bemtorres 2019</a></p>
               </div>
             </div>
           </div>
@@ -138,17 +103,9 @@
     <script src="vendors/pace-progress/js/pace.min.js"></script>
     <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
     <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
-    <!-- Animacion Img -->
     <script>          
       const element =  document.querySelector('.logoe');
       element.classList.add('animated', 'rubberBand');
     </script>
-    <!-- Emoji -->
-    <script src="vendors/emoji-picker/js/config.js"></script>
-    <script src="vendors/emoji-picker/js/util.js"></script>
-    <script src="vendors/emoji-picker/js/jquery.emojiarea.js"></script>
-    <script src="vendors/emoji-picker/js/emoji-picker.js"></script>
-    <!-- Controller js -->
-    <script src="app.js"></script>
   </body>
 </html>
