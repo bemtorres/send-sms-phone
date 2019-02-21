@@ -1,0 +1,28 @@
+.m-fondo {
+    background-color: #fff !important;
+    border: 10px solid #EAEAEA !important;
+}
+.m-bgBlue{
+    background-color: #092845 !important;
+}
+.m-textBlue{
+    color: #092845 !important;
+}
+.m-bgBlueSuave{
+    background-color: #003462 !important;
+}
+.m-textBlueSuave{
+    color: #003462 !important;
+}
+.m-bgYellow{
+    background-color: #D29524 !important;
+}
+.m-textYellow{
+    color: #D29524 !important;
+}
+.m-bgGrey{
+    background-color: #F3F3F3 !important;
+}
+.m-textGrey{
+ color: #F3F3F3 !important;
+}
