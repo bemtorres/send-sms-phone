@@ -1,5 +1,5 @@
 
-
+//Version 0.2
 
 // fetch send
 function send(){
@@ -9,7 +9,7 @@ var port = document.getElementById('port').value;
 var phone = document.getElementById('phone').value;
 var message = document.getElementById('message').value;
 
-var url = server + ':' + port +'/v1/sms/send/?phone=' + phone + '&message=' + message;
+var url = 'http://'+ server + ':' + port +'/v1/sms/send/?phone=' + phone + '&message=' + message;
 
 fetch(url)
   .then(function(response) {    
