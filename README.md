@@ -49,15 +49,16 @@ send-sms-phone/
 └── README.md
 ```
 ### Instrucciones
+* Instalar Extensión Chrome [Allow-Control-Allow-Origin](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi)
 
 * Instalar en el celular [REST SMS Gateway](ttps://play.google.com/store/apps/details?id=com.perfness.smsgateway.rest&hl=es_CL)
 
-* Conectarse en la misma red
+* Conectarse a la misma red
 
 * Abrir index.html y aplicación
 
 ```
-Server : 192.168.1.102 // IP que tu aplicación indica
+Server : http://192.168.1.102 // IP que tu aplicación indica
 Port   : 8080
 Phone  : xxxxxxx34
 Message: ........
@@ -67,10 +68,8 @@ Message: ........
 
 ## Desmostración
 
-![Example Screenshot](https://github.com/bemtorres/send-sms-phone/blob/master/doc/portada.png?raw=true)
-![Example Screenshot](https://github.com/bemtorres/send-sms-phone/blob/master/doc/portada.png?raw=true)
-![Example Screenshot](https://github.com/bemtorres/send-sms-phone/blob/master/doc/portada.png?raw=true)
-![Example Screenshot](https://github.com/bemtorres/send-sms-phone/blob/master/doc/portada.png?raw=true)
+![send](https://github.com/bemtorres/send-sms-phone/blob/master/doc/sendOk.png?raw=true)
+![phone](https://github.com/bemtorres/send-sms-phone/blob/master/doc/phoneOk.png?raw=true)
 
 
 ### Configuración extra

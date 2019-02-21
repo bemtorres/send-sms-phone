@@ -9,33 +9,37 @@ var port = document.getElementById('port').value;
 var phone = document.getElementById('phone').value;
 var message = document.getElementById('message').value;
 
-var url = 'http://'+ server + ':' + port +'/v1/sms/send/?phone=' + phone + '&message=' + message;
+var url = server + ':' + port +'/v1/sms/send/?phone=' + phone + '&message=' + message;
 
 fetch(url)
-  .then(function(response) {    
-    return response.text();
+  .then(resp => {    
+    return resp.text();
   })
-  .then(function(result) {
+  .then(result => {
     console.log(result);
     if(result=="OK"){
-        console.log("Enviado correctamente");
-        snackbarUp();
-    }else{
-        console.log("Error");
+      console.log("Enviado correctamente");
+        snackbarUp('Message Ok..');
+    }
+    if(result=="500"){
+      console.log("Error en parametros");
+      snackbarUp('Error 500');
     }
   })
   .catch(error =>{
-      console.log(error);
+    console.log("fail :" + error.message);
+    snackbarUp('Fail, wrong data');
   });
-
 }
 
 // Snackbar
-function snackbarUp() {
+function snackbarUp(message) {
     var x = document.getElementById("snackbar");
+    x.innerHTML = message;
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
+
 
 // Emoji
 $(function() {
